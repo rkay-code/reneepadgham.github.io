@@ -1,0 +1,211 @@
+///////////////// GENERAL //////////////////
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  letter-spacing: .5px;
+  color: #4A4A4A;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 400;
+}
+
+h2 {
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin: 10px 0;
+  color: #F45B69;
+}
+
+h4 {
+  margin: 5px 0;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1.25px;
+  color: #9B9B9B;
+}
+
+p {
+  color: #7A7A7A;
+}
+
+
+///////////////// ABOUT //////////////////
+
+.about {
+  background-color: #1D2129;
+  width: 100%;
+  height: 750px;
+  text-align: center;
+  padding-top: 50px;
+
+  h1 {
+    color: #fff;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 3.05em;
+    letter-spacing: 2px;
+
+    b {
+      color: #F45B69;
+      font-weight: 300;
+    }
+  }
+
+  h3 {
+    color: #EBEBEB;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 0;
+    font-size: 1.825em;
+    letter-spacing: 2.5px;
+  }
+
+}
+
+.tip {
+  color: #9B9B9B;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.hello {
+  margin-top: 10%;
+}
+
+.scroll {
+  color: #EBEBEB;
+  font-size: 26px;
+  margin-top: 11%;
+  cursor: pointer;
+}
+
+
+///////////////// PORTFOLIO //////////////////
+
+.macbook {
+  width: 45%;
+  margin: 75px 35px 75px 5%;
+  display: inline-block !important;
+}
+
+.iphone {
+  width: 15%;
+  margin: 75px 35px 75px 22%;
+  display: inline-block !important;
+}
+
+.project-details {
+  width: 40%;
+  margin: 65px 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+div:focus {
+  outline: none;
+}
+
+.projects {
+  margin: 150px auto;
+}
+
+
+
+///////////////// MENU //////////////////
+
+.menu {
+	width: 300px;
+	height: 200px;
+	margin: 25px auto 20px;
+	position: relative;
+	-webkit-filter: url("#goo");
+	filter: url("../index.html#goo");
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+.menu-wrapper {
+	position: absolute;
+	left: 50%;
+	bottom: 10px;
+}
+
+.menu-toggle-button,
+.menu-item-bounce,
+.menu-item-button {
+	background: #F45B69;
+	border-radius: 50%;
+	width: 85px;
+	height: 85px;
+	margin-left: -40px;
+	margin-top: -40px;
+	color: #fff;
+	border: none;
+	outline: none;
+	position: relative;
+}
+
+.menu-toggle-button:hover {
+  cursor: pointer;
+}
+
+.menu-toggle-icon {
+	font-size: 30px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+}
+
+.menu-items {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.menu-item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+}
+
+.menu-item-bounce {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.menu-item-button {
+  width: 50px;
+  height: 50px;
+  margin-left: -25px;
+  margin-top: -45px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  a {
+    color: #EBEBEB;
+  }
+
+}
+
+.menu-item-button a:hover {
+	color: #fff;
+}
