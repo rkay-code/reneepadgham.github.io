@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Renée Padgham</title>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="fonts/vicons/vicons-font.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- about -->
+  <section class="about">
+    <div class="bio">
+      <img src="img/megg.jpg" class="me">
+      <img src="img/logo.png">
+      <div class="text">
+        <h1><b>Renée Padgham</b></h1>
+        <h4><i>noun</i> | ruh-ney paj-um</h4>
+        <h3>: designer and builder of products.<br>
+          : likes <a href="http://hacker.fund/" target="blank">mentoring at hackathons.</a> </h3>
+        </span>
+      </div>
+  </section>
+
+  <!-- menu -->
+  <div class="menu-container">
+    <nav class="menu">
+      <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+      <label class="menu-open-button" for="menu-open">
+        <i class="fa fa-hand-paper-o menu-toggle-icon"></i>
+      </label>
+
+      <a href="https://medium.com/@reneepadgham" target="_blank" class="menu-item"> <i class="fa fa-medium"></i> </a>
+      <a href="https://www.instagram.com/reneepadgham/" target="_blank" class="menu-item"> <i class="fa fa-instagram"></i> </a>
+      <a href="https://www.linkedin.com/in/reneepadgham" target="_blank" class="menu-item"> <i class="fa fa-linkedin"></i> </a>
+      <a href="mailto:renee@padgham.com" class="menu-item"> <i class="fa fa-envelope-o"></i> </a>
+
+    </nav>
+  </div>
+
+  <!-- projects -->
+  <section class="work">
+    <div class="md-trigger thumbnail" data-modal="modal-4">
+      <img src="img/Macbook-Silver.png">
+      <h2>Gamesmith</h2>
+    </div>
+    <div class="md-modal md-effect-1" id="modal-4">
+      <div class="md-content">
+        <div class="project-images">
+          <div>
+            <img src="img/Macbook-Silver.png" class="macbook">
+          </div>
+          <div>
+            <img src="img/Macbook-Silver.png" class="macbook">
+          </div>
+          <div>
+            <img src="img/Macbook-Silver.png" class="macbook">
+          </div>
+        </div>
+        <div class="project-details">
+          <h2>Beneft</h2>
+          <h4>Design | Development (MEAN stack)</h4>
+          <p>
+            I'm gonna go fondle my sweaters. You taste like a trapper-keeper full of appointments, right? I'm gonna go fondle my sweaters. Last night was really great. I'll put him on last.
+
+            I say? Well, I just wanna spend some time with you, you know? Let's meet in the Cleveland Playhouse or something? Now finish up them taters, I'm gonna go fondle my sweaters. God, am I in the Cleveland Playhouse or something?
+          </p>
+        </div>
+        <button class="md-close">That's cool</button>
+      </div>
+    </div>
+
+    <div class="md-trigger thumbnail thumbnail" data-modal="modal-1">
+      <img src="img/gigster.png">
+      <h2>Gigster</h2>
+    </div>
+    <div class="md-modal md-effect-1" id="modal-1">
+      <div class="md-content">
+        <h3>1</h3>
+        <div>
+          <p>Project details</p>
+          <button class="md-close">That's cool</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="md-trigger thumbnail" data-modal="modal-2">
+      <img src="img/coinmotion.png">
+      <h2>Coinmotion</h2>
+    </div>
+    <div class="md-modal md-effect-1" id="modal-2">
+      <div class="md-content">
+        <h3>2</h3>
+        <div>
+          <p>Project details</p>
+          <button class="md-close">That's cool</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="md-trigger thumbnail" data-modal="modal-3">
+      <img src="img/itripsmart.png">
+      <h2>iTripSmart</h2>
+    </div>
+    <div class="md-modal md-effect-1" id="modal-3">
+      <div class="md-content">
+        <h3>3</h3>
+        <div>
+          <p>Project details</p>
+          <button class="md-close">That's cool</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="md-overlay"></div>
+  </section>
+
+  <!-- svg menu filters -->
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="shadowed-goo">
+
+        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+        <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+        <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+        <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+        <feComposite in2="shadow" in="goo" result="goo" />
+        <feComposite in2="goo" in="SourceGraphic" result="mix" />
+      </filter>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+        <feComposite in2="goo" in="SourceGraphic" result="mix" />
+      </filter>
+    </defs>
+  </svg>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.js"></script>
+  <script type="text/javascript" src="js/classie.js"></script>
+  <script type="text/javascript" src="js/modalEffects.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>

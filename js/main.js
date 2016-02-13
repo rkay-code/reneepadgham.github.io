@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  $('.projects').slick({
+  $('.project-images').slick({
     dots: true,
     infinite: true,
     speed: 500,
@@ -10,11 +10,5 @@ $(document).ready(function(){
     arrows: false,
     swipeToSlide: true
   });
-
-  $('.scroll').click(function () {
-        $('html, body').animate({
-            scrollTop: $('.work').offset().top
-        }, 'slow');
-    });
 
 });
