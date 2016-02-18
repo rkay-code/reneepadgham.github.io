@@ -10,7 +10,7 @@ body {
   letter-spacing: 0.5px;
   color: #4a4a4a;
   max-width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 h1,
