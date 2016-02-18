@@ -441,14 +441,21 @@ div:focus {
     width: 85%;
     margin: auto; }
   .about .me {
-    display: block;
-    margin: 0 auto 50px; }
+    display: inline-block;
+    margin: 0 50px 10px auto; }
   .about img {
     display: none; }
   .about h1 {
     font-size: 2.5em; }
   .about h3 {
-    font-size: 1em; }
+    font-size: 1em;
+    font-weight: 300 }
+  .about h4 {
+    font-weight: 300
+  }
+  h2 {
+    font-weight: 300
+  }
 
   .menu {
     margin-left: -70px;
