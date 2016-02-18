@@ -1,4 +1,6 @@
-///////////////// GENERAL //////////////////
+/* ----------- GENERAL ----------- */
+
+
 html {
   height: 100%;
 }
@@ -64,7 +66,13 @@ a {
   text-decoration: none;
   color: #fca17d;
 }
-///////////////// ABOUT //////////////////
+svg {
+  height: 0;
+}
+
+
+/* ----------- ABOUT ----------- */
+
 .about {
   width: 100%;
   padding: 50px 0 75px;
@@ -116,7 +124,10 @@ a {
   font-weight: 300;
   color: #9b9b9b;
 }
-///////////////// PORTFOLIO //////////////////
+
+
+/* ----------- PORTFOLIO ----------- */
+
 .work {
   padding-top: 100px;
   text-align: center;
@@ -232,7 +243,10 @@ div:focus {
 .projects {
   margin: 150px auto;
 }
-///////////////// MENU //////////////////
+
+
+/* ----------- MENU ----------- */
+
 .menu {
   -webkit-filter: url('#shadowed-goo');
   filter:url('#shadowed-goo');
@@ -284,8 +298,7 @@ div:focus {
   text-align: left;
 }
 .menu-item:hover {
-  color: #00bcd4;
-  background: white;
+  background: #fca17d;
 }
 .menu-item:nth-child(3) {
   -webkit-transition-duration: 180ms;
@@ -353,7 +366,10 @@ div:focus {
   -webkit-transform: translate3d(-220px, 0, 0);
   transform: translate3d(-220px, 0, 0);
 }
-///////////////// MODAL //////////////////
+
+
+/* ----------- MODAL ----------- */
+
 .md-trigger {
   cursor: pointer;
 }
@@ -440,7 +456,10 @@ div:focus {
   transform: scale(1);
   opacity: 1;
 }
+
+
 /* ----------- RESPONSIVE ----------- */
+
 @media (min-width : 320px) and (max-width : 768px ) {
   .about {
     .bio {
