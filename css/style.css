@@ -8,7 +8,10 @@ body {
   min-height: 100%;
   margin: 0;
   letter-spacing: 0.5px;
-  color: #4a4a4a; }
+  color: #4a4a4a;
+  max-width: 100%;
+  overflow: hidden;
+}
 
 h1,
 h2,
@@ -420,7 +423,19 @@ div:focus {
   opacity: 1; }
 
 /* ----------- RESPONSIVE ----------- */
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+  .thumbnail {
+    display: inline-block;
+    width: 40%;
+    margin: 4.5%; } }
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 768px)
+  and (-webkit-min-device-pixel-ratio: 2) {
   .about .bio {
     text-align: center;
     width: 85%;
@@ -467,11 +482,5 @@ div:focus {
     display: block;
     width: 85%;
     margin: 0 auto 75px; } }
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .thumbnail {
-    display: inline-block;
-    width: 40%;
-    margin: 4.5%; } }
 
 /*# sourceMappingURL=style.css.map */
