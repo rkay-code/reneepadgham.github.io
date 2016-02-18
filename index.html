@@ -4,189 +4,230 @@
 <head>
   <meta charset="utf-8">
   <title>Renée Padgham</title>
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <link rel='icon' href='img/favicon.png' type='image/png'/ >
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="fonts/vicons/vicons-font.css" />
-  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body>
+
+  <!-- about -->
   <section class="about">
-  <div class="menu">
-  <div class="menu-wrapper">
-    <ul class="menu-items">
-      <li class="menu-item">
-        <button class="menu-item-button">
-          <a href="https://www.linkedin.com/in/reneepadgham" target="_blank">
-          <i class="menu-item-icon fa fa-linkedin"></i>
-          </a>
-        </button>
-        <div class="menu-item-bounce"></div>
-      </li>
-      <li class="menu-item">
-        <button class="menu-item-button">
-          <a href="https://medium.com/@reneepadgham" target="_blank">
-          <i class="menu-item-icon fa fa-medium"></i>
-          </a>
-        </button>
-        <div class="menu-item-bounce"></div>
-      </li>
-      <li class="menu-item">
-        <button class="menu-item-button">
-          <a href="https://www.instagram.com/reneepadgham/" target="_blank">
-          <i class="menu-item-icon fa fa-instagram"></i>
-          </a>
-        </button>
-        <div class="menu-item-bounce"></div>
-      </li>
-      <li class="menu-item">
-        <button class="menu-item-button">
-          <a href="https://www.facebook.com/reneepadgham" target="_blank">
-          <i class="menu-item-icon fa fa-facebook"></i>
-          </a>
-        </button>
-        <div class="menu-item-bounce"></div>
-      </li>
-      <li class="menu-item">
-        <button class="menu-item-button">
-          <a href="mailto:renee@padgham.com">
-          <i class="menu-item-icon fa fa-envelope-o"></i>
-          </a>
-        </button>
-        <div class="menu-item-bounce"></div>
-      </li>
-    </ul>
-    <button class="menu-toggle-button" title="High fives are fun">
-      <i class="fa fa-hand-paper-o menu-toggle-icon"></i>
-    </button>
-  </div>
-  </div>
-  <div>
-    <p class="tip">
-      psst, hey you... high fives make friends &hearts;
-    </p>
-  </div>
-  <div class="hello">
-    <h1>Hi there, I'm <b>Renée</b></h1>
-    <h3>I design and build products</h3>
-    <i class="fa fa-angle-double-down scroll"></i>
+    <div class="bio">
+      <img src="img/megg.jpg" class="me">
+      <img src="img/logo.png">
+      <div class="text">
+        <h1><b>Renée Padgham</b></h1>
+        <h4><i>noun</i> | ruh-ney paj-um</h4>
+        <h3>: designer and builder of products.<br>
+          : likes <a href="http://hacker.fund/" target="blank">mentoring at hackathons.</a> </h3>
+        </span>
+      </div>
+  </section>
+
+  <!-- menu -->
+  <div class="menu-container">
+    <nav class="menu">
+      <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+      <label class="menu-open-button" for="menu-open">
+        <i class="fa fa-hand-paper-o menu-toggle-icon"></i>
+      </label>
+
+      <a href="https://medium.com/@reneepadgham" target="_blank" class="menu-item"> <i class="fa fa-medium"></i> </a>
+      <a href="https://www.instagram.com/reneepadgham/" target="_blank" class="menu-item"> <i class="fa fa-instagram"></i> </a>
+      <a href="https://www.linkedin.com/in/reneepadgham" target="_blank" class="menu-item"> <i class="fa fa-linkedin"></i> </a>
+      <a href="mailto:renee@padgham.com" class="menu-item"> <i class="fa fa-envelope-o"></i> </a>
+
+    </nav>
   </div>
 
-  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="800">
+  <!-- projects -->
+  <section class="work">
+    <h1>
+      <i class="fa fa-pencil"></i> + <i class="fa fa-code"></i> = <i class="fa fa-heart"></i>
+    </h1>
+    <div class="md-trigger thumbnail thumbnail" data-modal="modal-2">
+      <img src="img/gigster.png" class="trigger-img">
+      <h2>Gigster</h2>
+      <h4>Design | Development</h4>
+      <h5>(HTML, CSS, Javascript)</h5>
+    </div>
+    <div class="md-modal md-effect-1" id="modal-2">
+      <div class="md-content">
+        <div class="project-images">
+          <div><img src="img/gigster.png" class="macbook"></div>
+          <div><img src="img/gigster-project.png" class="macbook"></div>
+        </div>
+        <div class="project-details">
+          <h3>Gigster</h3>
+          <h4>Design | Front-End Development (HTML, CSS, Javascript)</h4>
+          <p>
+            <b>Product:</b><br />Gigster is an on-demand software development platform.<br /><br />
+            <b>Project Details:</b><br />
+            Product Managers and Developers need to quickly see the status of their project on two primary metrics: timeliness and customer satisfaction.
+            We created a visual interface using a progress bar for timeliness and an emoticon face for customer satisfaction.
+            They have potential states of all's good (green), be careful (orange), and this is going south quickly (red) to notify users when action is necessary.
+          </p>
+        </div>
+        <button class="md-close">CLOSE</button>
+      </div>
+    </div>
+    <div class="md-trigger thumbnail" data-modal="modal-1">
+      <img src="img/gamesmith-carousel.png" class="trigger-img">
+      <h2>Gamesmith</h2>
+      <h4>Design</h4>
+    </div>
+    <div class="md-modal md-effect-1" id="modal-1">
+      <div class="md-content">
+        <div class="project-images">
+          <div><img src="img/gamesmith-carousel.png" class="macbook"></div>
+          <div><img src="img/gamesmith-card.png" class="macbook"></div>
+        </div>
+        <div class="project-details">
+          <h3>Gamesmith</h3>
+          <h4>Design</h4>
+          <p>
+            <b>Product:</b><br />Gamesmith is the authoritative who's who of video game professionals.<br /><br />
+            <b>Project Details:</b><br />We wanted to combine the clean feel of a networking site with the modern playfulness of a game.
+            The primary mechanism is a deck of cards containing other professionals in your network.
+            Each user has a card which lists their accomplishments, and users can validate or invalidate other user's accomplishments.
+            I created a color palette based on video game imagery, and I combined clean typography with modern iconography to give the content heavy product a lighter feel.
+          </p>
+        </div>
+        <button class="md-close">CLOSE</button>
+      </div>
+    </div>
+    <div class="md-trigger thumbnail" data-modal="modal-3">
+      <img src="img/coinmotion.png" class="trigger-img">
+      <h2>Coinmotion</h2>
+      <h4>Design | Development</h4>
+      <h5>(HTML, CSS, Javascript)</h5>
+    </div>
+    <div class="md-modal md-effect-1" id="modal-3">
+      <div class="md-content">
+        <div class="project-images">
+          <div><img src="img/coinmotion.png" class="macbook"></div>
+        </div>
+        <div class="project-details">
+          <h3>Coinmotion</h3>
+          <h4>Design | Development (HTML, CSS, Javascript)</h4>
+          <p>
+            <b>Product:</b><br />Bitcoin. Easy, fast, the way it should be.<br /><br />
+            <b>Project Details:</b><br />We had two goals: 1.) make a large amount of textual information more visual, and 2.) increase engagement with the site.
+            We wanted to take the many possible actions/views on the primary wallet interface and consolidate them into a single screen view.
+            We did this by giving send money (one of the highest use cases) a permanent home at the top and moving less common transactional flows into modals.
+            We also added in light gamification of the registration system to increase the amount of information provided.
+          </p>
+        </div>
+        <button class="md-close">CLOSE</button>
+      </div>
+    </div>
+    <div class="md-trigger thumbnail" data-modal="modal-4">
+      <img src="img/itripsmart.png" class="trigger-img">
+      <h2>iTripSmart</h2>
+      <h4>Design</h4>
+    </div>
+    <div class="md-modal md-effect-1" id="modal-4">
+      <div class="md-content">
+        <div class="project-images">
+          <div><img src="img/itripsmart.png" class="macbook"></div>
+          <div><img src="img/itripsmart-profile.png" class="macbook"></div>
+          <div><img src="img/itripsmart-landing-how.png" class="macbook"></div>
+        </div>
+        <div class="project-details">
+          <h3>iTripSmart</h3>
+          <h4>Design</h4>
+          <p>
+            <b>Product:</b><br />Intelligent personalized trip planning.<br /><br />
+            <b>Project Details:</b><br />We wanted to create a single page experience for road trip planning.
+            We did this by implementing a navigation pane on the left side and an information pane on the right side.
+            Within these users can select their interest preferences, view information on potential stops, and add or remove stops.
+            All trip information is saved in their profile, along with pictures from their trip, to create a visual record of their adventures.
+          </p>
+        </div>
+        <button class="md-close">CLOSE</button>
+      </div>
+    </div>
+    <div class="md-trigger thumbnail" data-modal="modal-5">
+      <img src="img/riskmaster.png" class="iphone trigger-img">
+      <h2>Riskmaster</h2>
+      <h4>Design | Development</h4>
+      <h5>(Obj-C)</h5>
+    </div>
+    <div class="md-modal md-effect-1" id="modal-5">
+      <div class="md-content">
+        <div class="project-images">
+          <div><img src="img/riskmaster.png" class="slider-iphone"></div>
+          <div><img src="img/riskmaster-categories.png" class="slider-iphone"></div>
+          <div><img src="img/riskmaster-grid.png" class="slider-iphone"></div>
+        </div>
+        <div class="project-details">
+          <h3>Riskmaster</h3>
+          <h4>Design | Development (Obj-C)</h4>
+          <p>
+            <b>Product:</b><br />A visual portfolio management tool.<br /><br />
+            <b>Project Details:</b><br />Tim Draper asked me to create an application for him to easily monitor and view information on the investments he's made from his personal funds.
+            We decided to make a no frills interface - clean, simple, and easily readable.
+            There were two primary use cases we designed for: a.) the ability to swipe through all investments in a card-like interface, and b.) the ability to quickly skim through companies by category or fund.
+            The card back also contained information on the CEO and current stock performance (not pictured).
+          </p>
+        </div>
+        <button class="md-close">CLOSE</button>
+      </div>
+    </div>
+    <div class="md-trigger thumbnail" data-modal="modal-6">
+      <img src="img/fantasystocks-profile.png" class="iphone trigger-img">
+      <h2>Fantasy Stocks</h2>
+      <h4>Design</h4>
+    </div>
+    <div class="md-modal md-effect-1" id="modal-6">
+      <div class="md-content">
+        <div class="project-images">
+          <div><img src="img/fantasystocks-detail.png" class="slider-iphone"></div>
+          <div><img src="img/fantasystocks-leaderboard.png" class="slider-iphone"></div>
+          <div><img src="img/fantasystocks-profile.png" class="slider-iphone"></div>
+        </div>
+        <div class="project-details">
+          <h3>Fantasy Stocks</h3>
+          <h4>Design</h4>
+          <p>
+            <b>Product:</b><br />Fantasy competition based on stock performance.<br /><br />
+            <b>Project Details:</b><br />Users are able to pick stocks, keep up with company news, and compete with friends without the monetary risk of actual stock purchases.
+          </p>
+        </div>
+        <button class="md-close">CLOSE</button>
+      </div>
+    </div>
+    <div class="md-overlay"></div>
+  </section>
+
+  <!-- svg menu filters -->
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
     <defs>
+      <filter id="shadowed-goo">
+
+        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+        <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+        <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+        <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+        <feComposite in2="shadow" in="goo" result="goo" />
+        <feComposite in2="goo" in="SourceGraphic" result="mix" />
+      </filter>
       <filter id="goo">
-        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
-        <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+        <feComposite in2="goo" in="SourceGraphic" result="mix" />
       </filter>
     </defs>
   </svg>
-  </section>
-
-  <section class="work">
-
-    <div class="projects">
-      <div>
-        <img src="img/Macbook-Silver.png" class="macbook">
-        <div class="project-details">
-          <h2>Beneft</h2>
-          <h4>Design | Development (MEAN stack)</h4>
-          <p>
-            I'm gonna go fondle my sweaters. You taste like a trapper-keeper full of appointments, right? I'm gonna go fondle my sweaters. Last night was really great. I'll put him on last.
-
-            I say? Well, I just wanna spend some time with you, you know? Let's meet in the Cleveland Playhouse or something? Now finish up them taters, I'm gonna go fondle my sweaters. God, am I in the Cleveland Playhouse or something?
-          </p>
-        </div>
-      </div>
-
-      <div>
-        <img src="img/coinmotion.png" class="macbook"/>
-        <div class="project-details">
-          <h2>Coinmotion</h2>
-          <h4>Design | Front-End Development (HTML, CSS, Javascript)</h4>
-          <p>
-            I'm gonna go fondle my sweaters. You taste like a trapper-keeper full of appointments, right? I'm gonna go fondle my sweaters. Last night was really great. I'll put him on last.
-
-            I say? Well, I just wanna spend some time with you, you know? Let's meet in the Cleveland Playhouse or something? Now finish up them taters, I'm gonna go fondle my sweaters. God, am I in the Cleveland Playhouse or something?
-          </p>
-        </div>
-      </div>
-
-      <div>
-        <img src="img/itripsmart.png" class="macbook">
-        <div class="project-details">
-          <h2>iTripSmart</h2>
-          <h4>Design</h4>
-          <p>
-            I'm gonna go fondle my sweaters. You taste like a trapper-keeper full of appointments, right? I'm gonna go fondle my sweaters. Last night was really great. I'll put him on last.
-
-            I say? Well, I just wanna spend some time with you, you know? Let's meet in the Cleveland Playhouse or something? Now finish up them taters, I'm gonna go fondle my sweaters. God, am I in the Cleveland Playhouse or something?
-          </p>
-        </div>
-      </div>
-
-      <div>
-        <img src="img/Macbook-Silver.png" class="macbook">
-        <div class="project-details">
-          <h2>Gigster</h2>
-          <h4>Design | Front-End Development (HTML, CSS, Javascript)</h4>
-          <p>
-            I'm gonna go fondle my sweaters. You taste like a trapper-keeper full of appointments, right? I'm gonna go fondle my sweaters. Last night was really great. I'll put him on last.
-
-            I say? Well, I just wanna spend some time with you, you know? Let's meet in the Cleveland Playhouse or something? Now finish up them taters, I'm gonna go fondle my sweaters. God, am I in the Cleveland Playhouse or something?
-          </p>
-        </div>
-      </div>
-
-      <div>
-        <img src="img/iphone.png" class="iphone">
-        <div class="project-details">
-          <h2>Riskmaster</h2>
-          <h4>Design | Development (Obj-C)</h4>
-          <p>
-            I'm gonna go fondle my sweaters. You taste like a trapper-keeper full of appointments, right? I'm gonna go fondle my sweaters. Last night was really great. I'll put him on last.
-
-            I say? Well, I just wanna spend some time with you, you know? Let's meet in the Cleveland Playhouse or something? Now finish up them taters, I'm gonna go fondle my sweaters. God, am I in the Cleveland Playhouse or something?
-          </p>
-        </div>
-      </div>
-
-      <div>
-        <img src="img/iphone.png" class="iphone">
-        <div class="project-details">
-          <h2>Darpdecade</h2>
-          <h4>Design</h4>
-          <p>
-            I'm gonna go fondle my sweaters. You taste like a trapper-keeper full of appointments, right? I'm gonna go fondle my sweaters. Last night was really great. I'll put him on last.
-
-            I say? Well, I just wanna spend some time with you, you know? Let's meet in the Cleveland Playhouse or something? Now finish up them taters, I'm gonna go fondle my sweaters. God, am I in the Cleveland Playhouse or something?
-          </p>
-        </div>
-      </div>
-
-      <div>
-        <img src="img/iphone.png" class="iphone">
-        <div class="project-details">
-          <h2>Soule</h2>
-          <h4>Design</h4>
-          <p>
-            I'm gonna go fondle my sweaters. You taste like a trapper-keeper full of appointments, right? I'm gonna go fondle my sweaters. Last night was really great. I'll put him on last.
-
-            I say? Well, I just wanna spend some time with you, you know? Let's meet in the Cleveland Playhouse or something? Now finish up them taters, I'm gonna go fondle my sweaters. God, am I in the Cleveland Playhouse or something?
-          </p>
-        </div>
-      </div>
-
-
-    </div>
-
-  </section>
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.js"></script>
+  <script type="text/javascript" src="js/classie.js"></script>
+  <script type="text/javascript" src="js/modalEffects.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
-  <script type="text/javascript" src="js/TweenMax.min.js"></script>
-  <script type="text/javascript" src="js/menu.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 
 </body>
