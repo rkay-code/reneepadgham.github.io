@@ -448,7 +448,7 @@ div:focus {
   left: 50%;
   visibility: hidden;
   width: 95%;
-  height: 95%;
+  max-height: 95%;
   padding: 50px;
   overflow-y: scroll;
   -webkit-transform: translateX(-50%) translateY(-50%);
