@@ -508,9 +508,11 @@ div:focus {
       display: none; }
     .about h1,
     .about b {
-      font-size: 1.5em; }
+      font-size: 1.5em;
+      font-weight: 200; }
     .about h3 {
-      font-size: 1.1em; }
+      font-size: 1.1em;
+      font-weight: 200; }
 
   h2 {
     font-size: 2.5em; }
