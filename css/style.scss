@@ -81,7 +81,8 @@ button {
   margin: 0 15px;
   font-size: 1.25em;
 }
-button.filter.active, button:hover {
+button.filter.active,
+button:hover {
   color: #EA2E49;
   border-bottom: 1px solid #EA2E49;
   cursor: pointer;
@@ -89,10 +90,7 @@ button.filter.active, button:hover {
 button:focus {
   outline: none;
 }
-
-
 /* ----------- ABOUT ----------- */
-
 .about {
   width: 100%;
   padding: 50px 0 75px;
@@ -108,7 +106,7 @@ button:focus {
   }
   .me {
     display: block;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 50px;
     border: #484A47 2px solid;
     border-radius: 50%;
     height: 150px;
@@ -135,10 +133,7 @@ button:focus {
   font-weight: 300;
   color: #9b9b9b;
 }
-
-
 /* ----------- PORTFOLIO ----------- */
-
 .work {
   padding-top: 100px;
   text-align: center;
@@ -151,7 +146,7 @@ button:focus {
     width: 190px;
     border: 0;
     border-top: 1px solid #f45b69;
-    margin: 25px auto 75px auto;
+    margin: 25px auto 75px;
   }
 }
 .segment {
@@ -257,10 +252,7 @@ div:focus {
 .projects {
   margin: 150px auto;
 }
-
-
 /* ----------- MENU ----------- */
-
 .menu {
   -webkit-filter: url('#shadowed-goo');
   filter:url('#shadowed-goo');
@@ -380,43 +372,34 @@ div:focus {
   -webkit-transform: translate3d(-220px, 0, 0);
   transform: translate3d(-220px, 0, 0);
 }
-
 .mobile-contact {
   display: none;
 }
-
-
 /* ----------- MIX-UP ----------- */
-
-*{
+* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-.container{
+.container {
   padding: 2% 2% 0;
   -webkit-backface-visibility: hidden;
 }
-
-.container:after{
+.container:after {
   content: '';
   display: inline-block;
   width: 100%;
 }
-
 .container .mix,
-.container .gap{
+.container .gap {
   display: inline-block;
   width: 28%;
 }
-
-.container .mix{
+.container .mix {
   margin-bottom: 2%;
   display: none;
 }
-
-.container .mix:after{
+.container .mix:after {
   content: attr(data-myorder);
   color: white;
   font-size: 16px;
@@ -425,20 +408,15 @@ div:focus {
   padding: 4% 6%;
   font-weight: 700;
 }
-
-.container .mix:before{
+.container .mix:before {
   content: '';
   display: inline-block;
 }
-
 .controls {
   margin-top: -30px;
   margin-bottom: 75px;
 }
-
-
 /* ----------- MODAL ----------- */
-
 .md-trigger {
   cursor: pointer;
 }
@@ -521,37 +499,28 @@ div:focus {
   transform: scale(1);
   opacity: 1;
 }
-
-
 /* ----------- RESPONSIVE ----------- */
-@media only screen
-  and (min-device-width : 768px)
-  and (max-device-width : 1024px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   .thumbnail {
     display: inline-block;
     width: 40%;
     margin: 4.5%;
   }
   .container .mix,
-  .container .gap{
+  .container .gap {
     width: 40%;
   }
   .about .bio .text {
     width: 80%;
   }
 }
-@media only screen
-  and (min-device-width : 320px)
-  and (max-device-width : 767px )
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px ) and (-webkit-min-device-pixel-ratio: 2) {
   .about {
     padding: 50px 0;
     .bio {
       text-align: center;
       width: 90%;
       margin: auto;
-
       .text {
         width: 100%;
       }
@@ -564,7 +533,8 @@ div:focus {
     img {
       display: none;
     }
-    h1, b {
+    h1,
+    b {
       font-size: 1.5em;
     }
     h3 {
@@ -600,7 +570,7 @@ div:focus {
     margin: 0 auto 75px;
   }
   .container .mix,
-  .container .gap{
+  .container .gap {
     width: 80%;
   }
   button {

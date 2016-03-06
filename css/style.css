@@ -81,7 +81,8 @@ button {
   margin: 0 15px;
   font-size: 1.25em; }
 
-button.filter.active, button:hover {
+button.filter.active,
+button:hover {
   color: #EA2E49;
   border-bottom: 1px solid #EA2E49;
   cursor: pointer; }
@@ -103,7 +104,7 @@ button:focus {
       text-align: center; }
   .about .me {
     display: block;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 50px;
     border: #484A47 2px solid;
     border-radius: 50%;
     height: 150px; }
@@ -138,7 +139,7 @@ button:focus {
     width: 190px;
     border: 0;
     border-top: 1px solid #f45b69;
-    margin: 25px auto 75px auto; }
+    margin: 25px auto 75px; }
 
 .segment {
   width: 80%;
@@ -505,7 +506,8 @@ div:focus {
       height: 300px; }
     .about img {
       display: none; }
-    .about h1, .about b {
+    .about h1,
+    .about b {
       font-size: 1.5em; }
     .about h3 {
       font-size: 1.1em; }
