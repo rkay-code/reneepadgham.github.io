@@ -11,4 +11,8 @@ $(document).ready(function(){
     swipeToSlide: true
   });
 
+  $(function(){
+    $('#Container').mixItUp();
+  });
+
 });
