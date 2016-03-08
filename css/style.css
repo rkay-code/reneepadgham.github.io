@@ -90,6 +90,10 @@ button:hover {
 button:focus {
   outline: none; }
 
+small {
+  color: #A5A5A5;
+  letter-spacing: 1px; }
+
 /* ----------- ABOUT ----------- */
 .about {
   width: 100%;
@@ -362,11 +366,12 @@ div:focus {
 
 .container {
   padding: 2% 2% 0;
-  -webkit-backface-visibility: hidden; }
+  -webkit-backface-visibility: hidden;
+  display: inline-block !important; }
 
 .container:after {
   content: '';
-  display: inline-block;
+  display: inline-block !important;
   width: 100%; }
 
 .container .mix,
@@ -471,7 +476,7 @@ div:focus {
   opacity: 0;
   text-align: center; }
 
-.md-show.md-effect-1 .md-content {
+.md-show.md-effect .md-content {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -ms-transform: scale(1);
