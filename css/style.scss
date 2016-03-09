@@ -403,6 +403,7 @@ div:focus {
 .container .mix {
   margin-bottom: 2%;
   display: none;
+  float: left;
 }
 .container .mix:after {
   content: attr(data-myorder);
