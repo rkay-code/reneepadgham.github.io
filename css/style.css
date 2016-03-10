@@ -237,9 +237,8 @@ div:focus {
 
 /* ----------- MENU ----------- */
 .menu {
-  -moz-filter: url("..#shadowed-goo");
-  -webkit-filter: url("#shadowed-goo");
-  filter: url("#shadowed-goo"); }
+  filter: url("#shadowed-goo");
+  -moz-filter: url("..#shadowed-goo"); }
 
 .menu-item,
 .menu-open-button {
@@ -256,7 +255,7 @@ div:focus {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   text-align: center;
-  color: white;
+  color: #fff;
   border-radius: 100%;
   background: #EA2E49; }
 
