@@ -236,9 +236,6 @@ div:focus {
   margin: 150px auto; }
 
 /* ----------- MENU ----------- */
-.menu {
-  filter: url("#shadowed-goo"); }
-
 .menu-item,
 .menu-open-button {
   line-height: 60px;
