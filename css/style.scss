@@ -258,8 +258,9 @@ div:focus {
 }
 /* ----------- MENU ----------- */
 .menu {
-  -webkit-filter: url('..#shadowed-goo');
-  filter:url('..#shadowed-goo');
+  -moz-filter: url('..#shadowed-goo');
+  -webkit-filter: url('#shadowed-goo');
+  filter:url('#shadowed-goo');
 }
 .menu-item,
 .menu-open-button {
