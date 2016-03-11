@@ -3,133 +3,82 @@ html {
   height: 100%;
 }
 body {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-weight: 300;
   min-height: 100%;
   margin: 0;
-  letter-spacing: 0.5px;
   color: #4a4a4a;
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-weight: 300;
-}
 h1 {
-  margin-bottom: 35px;
-  margin-top: 0;
-  color: #fff;
-  font-weight: 100;
-  font-size: 1.75em;
-  letter-spacing: 2px;
-}
-b {
-  font-size: 2.25em;
+  font-size: 2.5em;
   margin: 0;
   vertical-align: top;
-  letter-spacing: 2px;
-  color: #EA2E49;
-  font-weight: 200;
-  font-family: 'Work Sans', sans-serif;
+  color: #0C0C0C;
+  font-weight: 400;
 }
 h2 {
-  font-size: 1.25em;
-  font-weight: 200;
-  margin: 20px 0 5px;
-  text-align: center;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #484A47;
-  font-family: 'Work Sans', sans-serif;
+    margin-bottom: 35px;
+    margin-top: 0;
+    color: #3F4045;
+    font-size: 1.75em;
+    font-weight: 300;
 }
 h3 {
-  text-transform: uppercase;
-  color: #f45b69;
-  font-size: 1.5em;
-  margin: 0 0 5px;
-  text-align: center;
-  letter-spacing: 2px;
+    font-size: 1.25em;
+    font-weight: 200;
+    margin: 20px 0 5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #484A47;
 }
-h4,
-h5 {
-  margin: 0;
-  letter-spacing: 1.25px;
-  text-transform: uppercase;
-  color: #9b9b9b;
-  text-align: center;
-  font-size: 0.95em;
-}
-h5 {
-  font-size: 0.85em;
+h4 {
+    margin: 0;
+    text-transform: uppercase;
+    color: #9b9b9b;
+    text-align: center;
+    font-size: 0.95em;
+    font-weight: 300;
 }
 p {
-  color: #7a7a7a;
+    font-size: 1.2em;
+    font-weight: 100;
+    margin: 0;
+    color: #757780;
+    text-transform: none;
 }
 a {
   text-decoration: none;
-  color: #E6E8E6;
-}
-svg {
-  height: 0;
+  color: #F05D5E;
 }
 button {
-  font-family: 'Work Sans', sans-serif;
-  background: none;
-  border: none;
-  margin: 0 15px;
-  font-size: 1.25em;
-}
-button.filter.active,
-button:hover {
-  color: #EA2E49;
-  border-bottom: 1px solid #EA2E49;
+  color: #757780;
+  border: 1px solid #757780;
   cursor: pointer;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  background: transparent;
+  margin: 0 15px;
+}
+button.filter.active {
+  color: #F05D5E;
+  border: 1px solid #F05D5E;
 }
 button:focus {
   outline: none;
 }
 small {
-  color: #A5A5A5;
-  letter-spacing: 1px;
+  color: #757780;
 }
 /* ----------- ABOUT ----------- */
 .about {
   width: 100%;
   padding: 50px 0 75px;
-  background-color: #0C0C0C;
+  background: #EFEFEF;
   .bio {
+    vertical-align: top;
+    width: 50%;
+    margin: auto;
     text-align: center;
-    .text {
-      vertical-align: top;
-      width: 50%;
-      margin: auto;
-      text-align: center;
-    }
-  }
-  .me {
-    display: block;
-    margin: 0 auto 50px;
-    border: #484A47 2px solid;
-    border-radius: 50%;
-    height: 150px;
-  }
-  h3,
-  h4 {
-    font-size: 1.2em;
-    font-weight: 100;
-    margin: 0;
-    letter-spacing: 2.5px;
-    color: #A5A5A5;
-    text-transform: none;
-  }
-  h4 {
-    margin-bottom: 30px;
-    text-transform: none;
-    i {
-      margin-bottom: 0;
-    }
   }
 }
 .tip {
@@ -137,27 +86,18 @@ small {
   font-weight: 300;
   color: #9b9b9b;
 }
+
+
 /* ----------- PORTFOLIO ----------- */
 .work {
   padding-top: 100px;
   text-align: center;
-  h1 {
-    font-size: 2em;
-    color: #1d2129;
-    margin-bottom: 75px;
-  }
-  hr {
-    width: 190px;
-    border: 0;
-    border-top: 1px solid #f45b69;
-    margin: 25px auto 75px;
-  }
 }
 .segment {
   width: 80%;
   margin: 40px auto;
-  h4 {
-    margin-bottom: 50px;
+  h3 {
+    margin-bottom: 0;
   }
 }
 .thumbnail {
@@ -166,6 +106,12 @@ small {
   margin: 0 2.5% 75px;
   text-align: center;
   vertical-align: top;
+}
+.pt-title {
+  color: #F05D5E;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.5em;
 }
 @-webkit-keyframes trigger-img {
   0% {
@@ -274,37 +220,21 @@ div:focus {
   text-align: center;
   color: #fff;
   border-radius: 100%;
-  background: #EA2E49;
+  background: #F05D5E;
 }
 .menu-open {
   display: none;
-}
-.menu-open:checked + .menu-open-button .hamburger-1 {
-  -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
-  transform: translate3d(0, 0, 0) rotate(45deg);
-}
-.menu-open:checked + .menu-open-button .hamburger-2 {
-  -webkit-transform: translate3d(0, 0, 0) scale(0.1, 1);
-  transform: translate3d(0, 0, 0) scale(0.1, 1);
-}
-.menu-open:checked + .menu-open-button .hamburger-3 {
-  -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
-  transform: translate3d(0, 0, 0) rotate(-45deg);
 }
 .menu {
   font-size: 20px;
   position: absolute;
   left: 50%;
   box-sizing: border-box;
-  width: 650px;
   height: 100px;
-  margin-left: -80px;
   padding-top: 20px;
-  padding-left: 80px;
-  text-align: left;
 }
 .menu-item:hover {
-  background: #fca17d;
+  margin-top: -3px;
 }
 .menu-item:nth-child(3) {
   -webkit-transition-duration: 180ms;
@@ -361,16 +291,28 @@ div:focus {
   transform: translate3d(220px, 0, 0);
 }
 .menu-open:checked ~ .menu-item:nth-child(5) {
+  -webkit-transition-duration: 390ms;
+  transition-duration: 390ms;
+  -webkit-transform: translate3d(3300px, 0, 0);
+  transform: translate3d(330px, 0, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(6) {
   -webkit-transition-duration: 190ms;
   transition-duration: 190ms;
   -webkit-transform: translate3d(-110px, 0, 0);
   transform: translate3d(-110px, 0, 0);
 }
-.menu-open:checked ~ .menu-item:nth-child(6) {
+.menu-open:checked ~ .menu-item:nth-child(7) {
   -webkit-transition-duration: 290ms;
   transition-duration: 290ms;
   -webkit-transform: translate3d(-220px, 0, 0);
   transform: translate3d(-220px, 0, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(8) {
+  -webkit-transition-duration: 390ms;
+  transition-duration: 390ms;
+  -webkit-transform: translate3d(-330px, 0, 0);
+  transform: translate3d(-330px, 0, 0);
 }
 .mobile-contact {
   display: none;
@@ -384,11 +326,12 @@ div:focus {
 .container {
   padding: 2% 2% 0;
   -webkit-backface-visibility: hidden;
-  display: inline-block !important;
+  display: inline-block;
+  max-width: 100%;
 }
 .container:after {
   content: '';
-  display: inline-block !important;
+  display: inline-block;
   width: 100%;
 }
 .container .mix,
@@ -502,7 +445,8 @@ div:focus {
   opacity: 1;
 }
 /* ----------- RESPONSIVE ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-width : 768px) and (max-width : 1024px)  {
   .thumbnail {
     display: inline-block;
     width: 40%;
@@ -512,40 +456,36 @@ div:focus {
   .container .gap {
     width: 40%;
   }
-  .about .bio .text {
+  .about .bio {
+    width: 80%;
+  }
+  .md-modal {
     width: 80%;
   }
 }
-@media only screen and (min-device-width : 320px) and (max-device-width : 767px ) and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (min-width : 320px) and (max-width : 767px ) {
+  .mobile-contact .fa {
+    margin: 50px 15px 0;
+    font-size: 1.5em;
+  }
+  button {
+    font-size: .75em;
+    margin: 0 5px;
+  }
+}
+@media screen and (min-device-width : 320px) and (max-device-width : 767px ) and (-webkit-min-device-pixel-ratio: 2) {
   .about {
     padding: 50px 0;
     .bio {
       text-align: center;
       width: 90%;
       margin: auto;
-      .text {
-        width: 100%;
-      }
-    }
-    .me {
-      display: block;
-      margin: 0 auto 100px;
-      height: 300px;
-    }
-    img {
-      display: none;
-    }
-    h1,
-    b {
-      font-size: 1.5em;
-      font-weight: 200;
-    }
-    h3 {
-      font-size: 1.1em;
-      font-weight: 200;
     }
   }
   h2 {
+    font-size: 2.5em;
+  }
+  h3 {
     font-size: 2.5em;
   }
   h4 {
@@ -563,9 +503,9 @@ div:focus {
   .mobile-contact {
     display: block;
     .fa {
-      color: #EA2E49;
+      color: #F05D5E;
       margin: 50px 30px 0;
-      font-size: 1.5em;
+      font-size: 2.5em;
     }
   }
   .thumbnail {
@@ -576,9 +516,20 @@ div:focus {
   .container .mix,
   .container .gap {
     width: 80%;
-    clear: both;
+    float: none;
   }
   button {
     font-size: 2em;
+  }
+  .segment {
+    h3 {
+    font-size: 1.5em;
+    }
+    h4 {
+      font-size: .95em;
+    }
+    p {
+      font-size: 1em;
+    }
   }
 }
