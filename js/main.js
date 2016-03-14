@@ -28,6 +28,7 @@ $(document).ready(function(){
 
   			function removeModal( hasPerspective ) {
   				classie.remove( modal, 'md-show' );
+          $("body").css({ overflow: 'inherit' });
 
   				if( hasPerspective ) {
   					classie.remove( document.documentElement, 'md-perspective' );
